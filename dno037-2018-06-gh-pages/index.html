@@ -86,8 +86,8 @@ function gotData(data) {
 	canvas.position(0,0);
 	canvas.style('z-index','-1');
 	fill(155);
-	var chroma= data.mail.temp
-	background(map(chroma,-10,40,200,255))
+	var chroma= data.main.temp;
+	background(map(chroma,10,40,200,255));
 	textAlign(LEFT);
 	textSize(72);
 	text(Math.round(data.main.temp) + 'º C', 50, height-50);
